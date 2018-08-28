@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pranay Narne"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="#020202"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ralewayextrabold"
+
+            />
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:text="view"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="[Warranty] My battery is draining quickly need support"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/ralewaysemibold"
+            android:textColor="#5d6360"
+            android:layout_below="@+id/username"
+            android:layout_toLeftOf="@+id/viewButton"
+            android:layout_alignParentLeft="true"
+            android:lines="2"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/question"
+
+            >
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:text="10:30 AM"
+                android:fontFamily="@font/ralewaylight"
+                android:textColor="#96b3a6"/>
+            <View
+                android:id="@+id/d1"
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/time"
+                android:layout_marginRight="2dp"
+
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:text="12/01/2018"
+                android:layout_toRightOf="@id/d1"
+                android:textColor="#96b3a6"/>
+            <View
+                android:id="@+id/d2"
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/date"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
